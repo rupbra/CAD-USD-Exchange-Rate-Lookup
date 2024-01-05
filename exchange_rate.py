@@ -13,13 +13,16 @@ Colors from https://www.coolors.com/
 Written by Rupert Bramall Feb 2021.
 
 """
-
 from tkinter import messagebox, END, CENTER
-import datetime, requests, json, os
-from tkcalendar import DateEntry
+import datetime
+import json
+import os
+import requests
+from functools import lru_cache
+
 from PIL import ImageTk, Image
 from resizeimage import resizeimage
-from functools import lru_cache
+from tkcalendar import DateEntry
 
 try:
     import tkinter as tk
